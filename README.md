@@ -8,8 +8,15 @@ Follow installation guide on http://docs.vagrantup.com/v2/installation/index.htm
 
 Control Vagrant
 ===================
-Access Elastic Search
-```http://localhost:9200/```
+Access Elasticsearch
+```
+http://localhost:9200
+```
+
+Kibana
+```
+http://localhost:5601
+```
 
 Control Vagrant
 ===================
