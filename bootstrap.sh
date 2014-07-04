@@ -62,17 +62,17 @@ echo setup nginx
 	sudo apt-get -y install nginx
 
 	#nginx Kinbana config	
-	wget https://github.com/elasticsearch/kibana/raw/master/sample/nginx.conf
-	find nginx.conf -type f -exec sed -i 's/kibana\.myhost\.org/localhost/g' {} \;
-	find nginx.conf -type f -exec sed -i 's/\/usr\/share\/kibana3/\/var\/www\/kibana/g' {} \;
+	# wget https://github.com/elasticsearch/kibana/raw/master/sample/nginx.conf
+	# find nginx.conf -type f -exec sed -i 's/kibana\.myhost\.org/localhost/g' {} \;
+	# find nginx.conf -type f -exec sed -i 's/\/usr\/share\/kibana3/\/var\/www\/kibana/g' {} \;
+	# sudo cp nginx.conf /etc/nginx/sites-available/default
 	
-	sudo cp nginx.conf /etc/nginx/sites-available/default
+	sudo cp /vagrant/configs-init/nginx.conf /etc/nginx/sites-available/default
+	
 	sudo service nginx restart
 
-#add activator to environment variables
-#echo "export PATH=/home/vagrant/activator-$activatorVersion-minimal:\$PATH" >> ~/.bashrc
-#use node as default JavaScript Engine
-#echo "export SBT_OPTS=\"\$SBT_OPTS -Dsbt.jse.engineType=Node\"" >> ~/.bashrc
+
+#configs-elk
 
 #reset bash
 source ~/.bashrc

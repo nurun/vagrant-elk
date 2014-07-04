@@ -37,6 +37,3 @@ vagrant destroy
 ```
 
 More documentation on http://www.vagrantup.com/
-
-
-
