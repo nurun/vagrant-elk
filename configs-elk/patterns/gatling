@@ -1,0 +1,5 @@
+#misc
+NOTTAB ([^\t]+)
+
+#log match
+GATLING %{NOTTAB:name}\t+%{NOTTAB:taskId}\t+%{NOTTAB:command}\t+%{NOTTAB:testType}\t+%{INT:requestStart}\t+%{INT:requestEnd}\t*(%{INT:responseStart}\t+%{INT:responseEnd}\t+%{NOTTAB:status}\t*(%{NOTTAB:errorMsg})?\t*)?
