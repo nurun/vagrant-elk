@@ -2,4 +2,4 @@
 NOTTAB ([^\t]+)
 
 #log match
-GATLING %{NOTTAB:name}\t+%{NOTTAB:taskId}\t+%{NOTTAB:command}\t+%{NOTTAB:testType}\t+%{INT:requestStart}\t+%{INT:requestEnd}\t*(%{INT:responseStart}\t+%{INT:responseEnd}\t+%{NOTTAB:status}\t*(%{NOTTAB:errorMsg})?\t*)?
+GATLING %{NOTTAB:scenario}\t+%{NOTTAB:userId}\t+%{NOTTAB:groupHierarchy}\t+%{NOTTAB:name}\t+%{INT:requestStartDate}\t+%{INT:requestEndDate}\t*(%{INT:responseStartDate}\t+%{INT:responseEndDate}\t+%{NOTTAB:status}\t*(%{NOTTAB:msg})?\t*(%{NOTTAB:extraInfo})?\t*)?
