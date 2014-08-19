@@ -48,6 +48,7 @@ vagrant up
 ```Shell
 vagrant ssh
 ```
+The default password is *vagrant*
 
 ###### Tear down box
 ```Shell
